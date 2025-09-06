@@ -4,13 +4,13 @@
 script_dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 cd $script_dir
 
-source_file='libsodium-1.0.19-stable.tar.gz'
+source_file='libsodium-1.0.20-stable.tar.gz'
 source_dir='libsodium-stable'
 build_dir='build'
 
 # download and verify the source
-rm -f $source_file
-curl https://download.libsodium.org/libsodium/releases/$source_file > $source_file
+# rm -f $source_file
+# curl https://download.libsodium.org/libsodium/releases/$source_file > $source_file
 minisign -Vm $source_file -p libsodium.org.minisign.pub || exit 1
 
 # extract source from previous builds
