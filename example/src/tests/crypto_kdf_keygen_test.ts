@@ -1,4 +1,7 @@
-import { crypto_kdf_KEYBYTES, crypto_kdf_keygen } from 'react-native-libsodium';
+import {
+  crypto_kdf_KEYBYTES,
+  crypto_kdf_keygen,
+} from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('crypto_kdf_keygen', () => {

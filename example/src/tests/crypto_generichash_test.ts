@@ -8,7 +8,7 @@ import {
   crypto_generichash_KEYBYTES_MIN,
   randombytes_buf,
   to_base64,
-} from 'react-native-libsodium';
+} from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('crypto_generichash', () => {

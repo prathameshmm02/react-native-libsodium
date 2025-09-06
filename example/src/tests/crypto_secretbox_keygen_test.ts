@@ -1,7 +1,7 @@
 import {
   crypto_secretbox_KEYBYTES,
   crypto_secretbox_keygen,
-} from 'react-native-libsodium';
+} from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('crypto_secretbox_keygen', () => {

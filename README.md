@@ -1,4 +1,4 @@
-# react-native-libsodium
+# @more-tech/react-native-libsodium
 
 React Native bindings to Libsodium matching the [libsodium-wrappers package](https://www.npmjs.com/package/libsodium-wrappers) API
 
@@ -15,7 +15,7 @@ Currently only a subset of the libsodium-wrappers exposed functionality is imple
 This package support the Expo plugin system and can be used together with the [Expo dev-client](https://docs.expo.dev/clients/introduction/).
 
 ```sh
-npm install react-native-libsodium
+npm install @more-tech/react-native-libsodium
 ```
 
 Extend app.config.js with the following plugins entry:
@@ -24,7 +24,7 @@ Extend app.config.js with the following plugins entry:
 export default {
   expo: {
     …
-    plugins: [["react-native-libsodium", {}]],
+    plugins: [["@more-tech/react-native-libsodium", {}]],
   }
 }
 ```
@@ -32,7 +32,7 @@ export default {
 ## Installation React Native
 
 ```sh
-npm install react-native-libsodium
+npm install @more-tech/react-native-libsodium
 cd ios && pod install
 ```
 
@@ -99,7 +99,7 @@ import {
   _unstable_crypto_kdf_hkdf_sha256_KEYBYTES, // has no counterpart in libsodium-wrappers yet
   _unstable_crypto_kdf_hkdf_sha256_extract, // has no counterpart in libsodium-wrappers yet
   _unstable_crypto_kdf_hkdf_sha256_expand, // has no counterpart in libsodium-wrappers yet
-} from 'react-native-libsodium';
+} from '@more-tech/react-native-libsodium';
 
 // ...
 ```
@@ -111,7 +111,7 @@ For the web platform the constants and functions from the `libsodium-wrappers` p
 Certain constants and functions e.g. `crypto_pwhash` are only available in the `libsodium-wrappers-sumo` package. To load this package instead for web you can call `loadSumoVersion` right after importing the package.
 
 ```ts
-import { loadSumoVersion, ready } from 'react-native-libsodium';
+import { loadSumoVersion, ready } from '@more-tech/react-native-libsodium';
 
 loadSumoVersion();
 ```
@@ -132,4 +132,4 @@ Made with [create-react-native-library](https://github.com/callstack/react-nativ
 
 ## Acknowledgment
 
-Thanks to [Donus](https://github.com/donus3) for freeing up the `react-native-libsodium` package name on npm.
+Thanks to [Donus](https://github.com/donus3) for freeing up the `@more-tech/react-native-libsodium` package name on npm.

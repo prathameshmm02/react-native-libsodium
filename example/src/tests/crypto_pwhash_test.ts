@@ -6,7 +6,7 @@ import {
   crypto_pwhash_OPSLIMIT_INTERACTIVE,
   crypto_pwhash_SALTBYTES,
   randombytes_buf,
-} from 'react-native-libsodium';
+} from '@more-tech/react-native-libsodium';
 import { isEqualUint8Array } from '../utils/isEqualUint8Array';
 import { expect, test } from '../utils/testRunner';
 

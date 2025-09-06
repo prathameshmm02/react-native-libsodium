@@ -1,4 +1,4 @@
-import { crypto_sign_ed25519_pk_to_curve25519 } from 'react-native-libsodium';
+import { crypto_sign_ed25519_pk_to_curve25519 } from '@more-tech/react-native-libsodium';
 import { isEqualUint8Array } from '../utils/isEqualUint8Array';
 import { expect, test } from '../utils/testRunner';
 

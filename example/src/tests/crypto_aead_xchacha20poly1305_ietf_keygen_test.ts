@@ -1,7 +1,7 @@
 import {
   crypto_aead_xchacha20poly1305_ietf_KEYBYTES,
   crypto_aead_xchacha20poly1305_ietf_keygen,
-} from 'react-native-libsodium';
+} from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('crypto_aead_xchacha20poly1305_ietf_keygen', () => {

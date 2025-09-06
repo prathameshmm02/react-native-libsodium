@@ -14,7 +14,7 @@ import {
   crypto_secretbox_NONCEBYTES,
   crypto_sign_SEEDBYTES,
   crypto_pwhash_ALG_ARGON2ID13,
-} from 'react-native-libsodium';
+} from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('constants', () => {

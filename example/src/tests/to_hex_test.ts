@@ -1,4 +1,4 @@
-import { to_hex } from 'react-native-libsodium';
+import { to_hex } from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('to_hex', () => {

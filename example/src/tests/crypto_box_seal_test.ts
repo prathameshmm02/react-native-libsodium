@@ -1,4 +1,7 @@
-import { crypto_box_seal, crypto_box_seal_open } from 'react-native-libsodium';
+import {
+  crypto_box_seal,
+  crypto_box_seal_open,
+} from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('crypto_box_seal', () => {

@@ -1,4 +1,4 @@
-import { randombytes_buf } from 'react-native-libsodium';
+import { randombytes_buf } from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('randombytes_buf', () => {

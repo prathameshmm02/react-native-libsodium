@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
-import sodium, { loadSumoVersion, ready } from 'react-native-libsodium';
+import sodium, {
+  loadSumoVersion,
+  ready,
+} from '@more-tech/react-native-libsodium';
 import { TestResults } from './components/TestResults';
 import { VisualImageTest } from './components/VisualImageTest';
 

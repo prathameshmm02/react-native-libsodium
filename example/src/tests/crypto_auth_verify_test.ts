@@ -1,4 +1,4 @@
-import { crypto_auth_verify } from 'react-native-libsodium';
+import { crypto_auth_verify } from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('crypto_auth_verify', () => {

@@ -6,7 +6,7 @@ import {
   from_base64,
   randombytes_buf,
   to_base64,
-} from 'react-native-libsodium';
+} from '@more-tech/react-native-libsodium';
 
 export const encryptAndDecryptImage = (contentAsBas64: string) => {
   const key = crypto_aead_xchacha20poly1305_ietf_keygen();

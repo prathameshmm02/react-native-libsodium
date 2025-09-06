@@ -1,4 +1,4 @@
-import { _unstable_crypto_kdf_hkdf_sha256_expand } from 'react-native-libsodium';
+import { _unstable_crypto_kdf_hkdf_sha256_expand } from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('_unstable_crypto_kdf_hkdf_sha256_expand_test', () => {

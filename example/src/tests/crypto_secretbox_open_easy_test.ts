@@ -6,7 +6,7 @@ import {
   randombytes_buf,
   to_base64,
   to_string,
-} from 'react-native-libsodium';
+} from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('crypto_secretbox_open_easy', () => {

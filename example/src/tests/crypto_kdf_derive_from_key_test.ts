@@ -1,7 +1,7 @@
 import {
   crypto_kdf_derive_from_key,
   crypto_kdf_keygen,
-} from 'react-native-libsodium';
+} from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('crypto_kdf_derive_from_key', () => {

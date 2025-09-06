@@ -1,7 +1,7 @@
 import {
   crypto_auth_KEYBYTES,
   crypto_auth_keygen,
-} from 'react-native-libsodium';
+} from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('crypto_auth_keygen', () => {

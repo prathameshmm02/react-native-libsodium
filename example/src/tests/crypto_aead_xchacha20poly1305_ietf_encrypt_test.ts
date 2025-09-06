@@ -4,7 +4,7 @@ import {
   crypto_aead_xchacha20poly1305_ietf_encrypt,
   randombytes_buf,
   to_base64,
-} from 'react-native-libsodium';
+} from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('crypto_aead_xchacha20poly1305_ietf_encrypt', () => {

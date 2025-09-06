@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "react-native-libsodium": ["./src/index"]
+      "@more-tech/react-native-libsodium": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

@@ -6,7 +6,7 @@ import {
   randombytes_buf,
   to_base64,
   to_string,
-} from 'react-native-libsodium';
+} from '@more-tech/react-native-libsodium';
 import { largeContent } from '../largeContent';
 import { threeMbImage } from '../threeMbImage';
 import { encryptAndDecryptImage } from '../utils/encryptAndDecryptImage';

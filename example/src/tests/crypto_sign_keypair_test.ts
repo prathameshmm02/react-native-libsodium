@@ -1,4 +1,4 @@
-import { crypto_sign_keypair } from 'react-native-libsodium';
+import { crypto_sign_keypair } from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('crypto_sign_keypair', () => {

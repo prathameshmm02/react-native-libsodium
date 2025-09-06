@@ -1,4 +1,7 @@
-import { base64_variants, from_base64 } from 'react-native-libsodium';
+import {
+  base64_variants,
+  from_base64,
+} from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('from_base64', () => {

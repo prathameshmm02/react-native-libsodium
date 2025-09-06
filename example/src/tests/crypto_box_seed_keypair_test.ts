@@ -3,7 +3,7 @@ import {
   crypto_box_SECRETKEYBYTES,
   crypto_box_seed_keypair,
   from_base64,
-} from 'react-native-libsodium';
+} from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('crypto_box_seed_keypair', () => {

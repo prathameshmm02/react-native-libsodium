@@ -1,4 +1,7 @@
-import { crypto_sign_verify_detached, to_base64 } from 'react-native-libsodium';
+import {
+  crypto_sign_verify_detached,
+  to_base64,
+} from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('crypto_sign_verify_detached', () => {

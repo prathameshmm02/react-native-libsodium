@@ -1,5 +1,5 @@
 {
-  "name": "react-native-libsodium",
+  "name": "@more-tech/react-native-libsodium",
   "version": "1.4.0",
   "description": "React Native bindings to Libsodium matching the libsodium-wrappers API",
   "main": "lib/commonjs/index",
@@ -46,15 +46,18 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/serenity-kit/react-native-libsodium",
-  "author": "Nik Graf <nik@nikgraf.com> (https://github.com/nikgraf)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prathameshmm02/react-native-libsodium.git"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/serenity-kit/react-native-libsodium/issues"
+    "url": "https://github.com/prathameshmm02/react-native-libsodium/issues"
   },
-  "homepage": "https://github.com/serenity-kit/react-native-libsodium#readme",
+  "homepage": "https://github.com/prathameshmm02/react-native-libsodium#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",

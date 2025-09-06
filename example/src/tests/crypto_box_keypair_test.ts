@@ -2,7 +2,7 @@ import {
   crypto_box_PUBLICKEYBYTES,
   crypto_box_SECRETKEYBYTES,
   crypto_box_keypair,
-} from 'react-native-libsodium';
+} from '@more-tech/react-native-libsodium';
 import { expect, test } from '../utils/testRunner';
 
 test('crypto_box_keypair', () => {
