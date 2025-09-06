@@ -1,3 +1,4 @@
+const { getDefaultConfig } = require('expo/metro-config');
 const path = require('path');
 const escape = require('escape-string-regexp');
 const exclusionList = require('metro-config/src/defaults/exclusionList');
@@ -9,32 +10,30 @@ const modules = Object.keys({
   ...pak.peerDependencies,
 });
 
-module.exports = {
-  projectRoot: __dirname,
-  watchFolders: [root],
+/** @type {import('expo/metro-config').MetroConfig} */
+const config = getDefaultConfig(__dirname);
 
-  // We need to make sure that only one version is loaded for peerDependencies
-  // So we block them at the root, and alias them to the versions in example's node_modules
-  resolver: {
-    blacklistRE: exclusionList(
-      modules.map(
-        (m) =>
-          new RegExp(`^${escape(path.join(root, 'node_modules', m))}\\/.*$`)
-      )
-    ),
+config.projectRoot = __dirname;
+config.watchFolders = [root];
 
-    extraNodeModules: modules.reduce((acc, name) => {
-      acc[name] = path.join(__dirname, 'node_modules', name);
-      return acc;
-    }, {}),
+// We need to make sure that only one version is loaded for peerDependencies
+// So we block them at the root, and alias them to the versions in example's node_modules
+config.resolver.blacklistRE = exclusionList(
+  modules.map(
+    (m) => new RegExp(`^${escape(path.join(root, 'node_modules', m))}\\/.*$`)
+  )
+);
+
+config.resolver.extraNodeModules = modules.reduce((acc, name) => {
+  acc[name] = path.join(__dirname, 'node_modules', name);
+  return acc;
+}, {});
+
+config.transformer.getTransformOptions = async () => ({
+  transform: {
+    experimentalImportSupport: true,
+    inlineRequires: true,
   },
+});
 
-  transformer: {
-    getTransformOptions: async () => ({
-      transform: {
-        experimentalImportSupport: false,
-        inlineRequires: true,
-      },
-    }),
-  },
-};
+module.exports = config;

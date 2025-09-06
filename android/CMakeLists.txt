@@ -3,6 +3,9 @@ cmake_minimum_required(VERSION 3.4.1)
 set (CMAKE_VERBOSE_MAKEFILE ON)
 set (CMAKE_CXX_STANDARD 14)
 
+# Ensure compatibility with devices using a 16KB kernel page size
+set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,-z,max-page-size=16384 -Wl,--max-page-size=16384")
+
 # add directories to "include" search paths
 include_directories(
             ../cpp
