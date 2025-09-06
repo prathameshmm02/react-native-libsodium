@@ -3,9 +3,6 @@ cmake_minimum_required(VERSION 3.4.1)
 set (CMAKE_VERBOSE_MAKEFILE ON)
 set (CMAKE_CXX_STANDARD 14)
 
-# Ensure compatibility with devices using a 16KB kernel page size
-set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -Wl,-z,max-page-size=16384 -Wl,--max-page-size=16384")
-
 # add directories to "include" search paths
 include_directories(
             ../cpp
@@ -41,6 +38,9 @@ add_library(libsodium
   ../cpp/react-native-libsodium.h
   cpp-adapter.cpp
 )
+
+# Enable Android 16kb native library alignment
+target_link_options(libsodium PRIVATE "-Wl,-z,max-page-size=16384")
 
 # link the sodium lib with our "libsodium" library target defined earlier
 target_link_libraries(libsodium sodium)
