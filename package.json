@@ -59,6 +59,7 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
+  "author": "Nik Graf <nik@nikgraf.com> (https://github.com/nikgraf)",
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
     "@evilmartians/lefthook": "^1.2.2",
