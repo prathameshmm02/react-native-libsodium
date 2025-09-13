@@ -9,8 +9,8 @@ source_dir='libsodium-stable'
 build_dir='build'
 
 # download and verify the source
-# rm -f $source_file
-# curl https://download.libsodium.org/libsodium/releases/$source_file > $source_file
+rm -f $source_file
+curl https://download.libsodium.org/libsodium/releases/$source_file > $source_file
 minisign -Vm $source_file -p libsodium.org.minisign.pub || exit 1
 
 # extract source from previous builds
