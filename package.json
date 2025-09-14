@@ -1,6 +1,6 @@
 {
   "name": "@more-tech/react-native-libsodium",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "React Native bindings to Libsodium matching the libsodium-wrappers API",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
